@@ -1,21 +1,18 @@
-import assert from "node:assert/strict";
-import {calcDownpayment} from"./calcDownpayment.js";
-import {convertFahrenheit} from"./convertFahrenheit.js";
+import assert from"node:assert/strict";
+import {calcDistance} from"./calcDistance.js";
 import {sumOfNumbers} from"./sumAndProductOutput.js";
 import {productOfNumbers} from"./sumAndProductOutput.js";
-import {calcDistance} from"./calcDistance.js";
+import {convertFahrenheit} from"./convertFahrenheit.js";
+import {calcDownpayment} from"./calcDownpayment.js";
 
-//sumAndProductOutput(1234);
-//sumAndProductOutput(102);
-//sumAndProductOutput(8);
-
+//calculating Distance Test
 describe("Test for calculating distance: ",function(){
     it("Expected 7.07 ",function(){
         assert.equal(calcDistance(0,0,5,5),7);
     });
 });
 
-
+//Sum of Number Tests
 describe("Test for sum: ",function(){
     it("Expected output sum=10 ",function(){
         assert.equal(sumOfNumbers(1234),10);
@@ -46,7 +43,7 @@ describe("Testing temprature conversion",function(){
     it("Expect 0:",function(){
         assert.equal(convertFahrenheit(32),0);
     });
-    it("Expect -17.7778:",function(){
+    it("Expect -18:",function(){
         assert.equal(convertFahrenheit(0),-18);
     });
     
@@ -56,11 +53,6 @@ describe("Testing temprature conversion",function(){
     });
     
     //calculate Down Payment Test
-    console.log("expect 2000: "+ calcDownpayment(40000));
-console.log("expect 2500: "+ calcDownpayment(50000));
-console.log("expect 7500: "+calcDownpayment(100000));
-console.log("expect 25000: "+ calcDownpayment(250000));
-
 describe("Test for downPayment: ",function(){
     it("Expect 2500: ",function(){
         assert.equal(calcDownpayment(40000),2000);

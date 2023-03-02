@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import {computeSalesCommission} from"./computeSalesCommission.js";
 import {compoundInterest} from"./compoundInterest.js";
 
+
+// Compute Sales Commission
 describe("test of ComputSalesCommission",function(){
     it("tests salaried and 200 sales",function(){
     assert.equal(computeSalesCommission(true,200), 0);
@@ -24,7 +26,7 @@ describe("test of ComputSalesCommission",function(){
    });
 
 
-
+//Compound Interest Rate
    describe("test for compoundInterestRate",function(){
     it("test interestRate for 5 years",function(){
     assert.equal(compoundInterest(1000,0.15,5),1007.52);

@@ -1,10 +1,10 @@
 
 /**
  * 
- * @param {*} initialAmount 
- * @param {*} annualInterestRate 
- * @param {*} numberOfYearsToCompound 
- * @returns 
+ * @param {number} initialAmount 
+ * @param {number} annualInterestRate 
+ * @param {number} numberOfYearsToCompound 
+ * @returns {number}
  */
 
 // eslint-disable-next-line require-jsdoc
