@@ -5,10 +5,6 @@ import {sumOfNumbers} from"./sumAndProductOutput.js";
 import {productOfNumbers} from"./sumAndProductOutput.js";
 import {calcDistance} from"./calcDistance.js";
 
-//sumAndProductOutput(1234);
-//sumAndProductOutput(102);
-//sumAndProductOutput(8);
-
 describe("Test for calculating distance: ",function(){
     it("Expected 7.07 ",function(){
         assert.equal(calcDistance(0,0,5,5),7);
@@ -56,11 +52,7 @@ describe("Testing temprature conversion",function(){
     });
     
     //calculate Down Payment Test
-    console.log("expect 2000: "+ calcDownpayment(40000));
-console.log("expect 2500: "+ calcDownpayment(50000));
-console.log("expect 7500: "+calcDownpayment(100000));
-console.log("expect 25000: "+ calcDownpayment(250000));
-
+    
 describe("Test for downPayment: ",function(){
     it("Expect 2500: ",function(){
         assert.equal(calcDownpayment(40000),2000);
