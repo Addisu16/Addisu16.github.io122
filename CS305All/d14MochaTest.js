@@ -2,10 +2,15 @@ import assert from"node:assert/strict";
 import {calcDistance} from"./calcDistance.js";
 import {sumOfNumbers} from"./sumAndProductOutput.js";
 import {productOfNumbers} from"./sumAndProductOutput.js";
+<<<<<<< HEAD
 import {convertFahrenheit} from"./convertFahrenheit.js";
 import {calcDownpayment} from"./calcDownpayment.js";
 
 //calculating Distance Test
+=======
+import {calcDistance} from"./calcDistance.js";
+
+>>>>>>> 1b981e2b748861d8f01809e19f36ddb167548ed1
 describe("Test for calculating distance: ",function(){
     it("Expected 7.07 ",function(){
         assert.equal(calcDistance(0,0,5,5),7);
@@ -53,6 +58,10 @@ describe("Testing temprature conversion",function(){
     });
     
     //calculate Down Payment Test
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 1b981e2b748861d8f01809e19f36ddb167548ed1
 describe("Test for downPayment: ",function(){
     it("Expect 2500: ",function(){
         assert.equal(calcDownpayment(40000),2000);
