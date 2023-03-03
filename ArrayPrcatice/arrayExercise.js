@@ -8,7 +8,7 @@ function isBalanced(expArray){
   const expStack=[];
    for(const bracket of expArray){
      if(bracket==="{"){
-      expArray.push(bracket);
+      expStack.push(bracket);
 
      }else{
       const popBracket=expStack.pop();
@@ -16,7 +16,7 @@ function isBalanced(expArray){
         return "not balanced";
       }
      }
-}
+    }
 if(expStack.length===0){
   return "balanced";
 }else{
@@ -25,6 +25,7 @@ return "not balanced";
 }
 
 
-console.log("expect it's balanced",isBalanced(["{","}","{"]));
 
-console.log("expect not balanced: ",isBalanced(["{","}","{","}"]));
+console.log("expect not balanced: ",isBalanced(["{","}","{"]));
+
+console.log("expect balanced: ",isBalanced(["{","}","{","}"]));
