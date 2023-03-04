@@ -17,28 +17,38 @@ function reverseArray(array){
 let arrayTest=reverseArray([1,2,3]);
 console.log(arrayTest);
 
-// function scoreMath(studentScore,correctAnswer){
-//     let count=0;
-//     let temp=[];
-//     let temp2=[];
-//     for(let i=0;i<studentScore.length;i++){
-//         for(let j=0;j<studentScore[i].length;j++){
-//           temp=studentScore[i][j]; 
-              
-//     for(let i=0;i<correctAnswer.length;i++){
-//            temp2=correctAnswer[i][j];
-//         }
-    
-//     if(temp===temp2){
-//         count++;
-//     }
-// }
-//     return count;
+//Score Exam
 
-//     }
-//     return ;
-// }
-// }
+/**
+ * 
+ * @param {Array} studentAnswers 
+ * @param {Array} correctAnswers 
+ * @returns {Array}
+ */
+function scoreExams(studentAnswers,correctAnswers){
+/*loop through each student and get score--count of correct*/
+for(const aStudent of stuAnswers){
+    const numCorrect=[];
+    const score=scoreStudent(aStudent,correctAnswers);
+    numCorrect.push(score);
+}
+return numCorrect;
+}
 
-// const a=scoreMath(([1,2,1,3],[1,2,1,4],[2,1,3,4]),([1,2,3,4]))
-//  console.log(a);
+
+/**
+ * 
+ * @param {Array} stuAns 
+ * @param {Array} corrAns 
+ * @return{Array}
+ */
+function scoreStudent(stuAns,corrAns){
+    let numCorrect=0;
+for(let i=0;i<stuAns.length;i++){
+   if(stuAns[i]===corrAns[i]){
+    numCorrect+=1;
+   }
+}
+return numCorrect;
+}
+

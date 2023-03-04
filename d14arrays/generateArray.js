@@ -18,4 +18,9 @@ function generateSequentialArray(rows, cols) {
     }
     return result;
   }
+  function sayHi(){
+    alert("Hello");
+  }
+  const myHi=sayHi();
+  console.log(myHi);
   
