@@ -12,7 +12,7 @@ describe("test of ComputSalesCommission",function(){
     assert.equal(computeSalesCommission(false,200), 0);
     });
     it("tests salaried and 300 sales",function(){
-    assert.equal(computeSalesCommission(true,300), 3);
+    assert.strictEqual(computeSalesCommission(true,300), 3);
     });
     it("tests not salaried and 300 sales",function(){
     assert.equal(computeSalesCommission(false,300), 6);
